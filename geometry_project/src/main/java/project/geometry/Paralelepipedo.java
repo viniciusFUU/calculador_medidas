@@ -36,8 +36,10 @@ public class Paralelepipedo {
     }
 
     public double calculoDeVolume(){
-        double volume = comprimento*altura*largura;
+        double volume = 2 * ((comprimento * largura + comprimento * altura + altura * largura));
+        double areaChaoTeto = 2*(comprimento * largura);
+        double volumeSemTetoEChao = volume-areaChaoTeto;
         
-        return volume;
+        return volumeSemTetoEChao;
     }
 }

@@ -12,7 +12,7 @@ public class ParalelepipedoController {
     public String valorDoTrabalho(double precoMetroQuadrado, double comprimento, double largura, double altura){
         double metroQuadrado = calculoDeVolume(comprimento, largura, altura);
         double valorServico = metroQuadrado * precoMetroQuadrado;
-        String valorFormatado = String.format("%.2f", valorServico); 
+        String valorFormatado = String.format("%.2f", valorServico);
 
         return valorFormatado;
     }

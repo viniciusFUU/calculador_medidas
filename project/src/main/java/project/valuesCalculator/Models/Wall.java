@@ -22,6 +22,6 @@ public class Wall {
         double heigth = wall.getServiceMeasureHeigth();
         double width = wall.getServiceMeasureBase();
         
-        return 2*(side*heigth)+2*(width*heigth);
+        return (2*(side*heigth)+2*(width*heigth))*meterValue;
     }
 }

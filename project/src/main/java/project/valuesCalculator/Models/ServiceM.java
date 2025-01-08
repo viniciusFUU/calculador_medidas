@@ -19,7 +19,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Service {
+public class ServiceM {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_service")
@@ -30,16 +30,7 @@ public class Service {
     private Client idClient;
 
     @Column(name = "service_description")
-    private String serviceDescription;
-
-    @Column(name = "service_measure_side")
-    private double serviceMeasureSide;
-
-    @Column(name = "service_measure_heigth")
-    private double serviceMeasureHeigth;
-
-    @Column(name = "service_measure_base")
-    private double serviceMeasureBase;
+    private ServiceType serviceType;
 
     @Column(name = "meter_value")
     private double meterValue;

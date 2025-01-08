@@ -14,7 +14,7 @@ public class Floor {
         this.side = side;
     }
 
-    public double calcService(Floor floor){
-        return floor.getFront()*floor.getSide();
+    public double calcService(Floor floor, double serviceValue){
+        return (floor.getFront()*floor.getSide())*serviceValue;
     }
 }

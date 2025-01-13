@@ -1,7 +1,10 @@
 package project.valuesCalculator.Models;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Getter;
 import lombok.Setter;
+@Component
 
 @Getter
 @Setter
@@ -10,12 +13,6 @@ public class Wall {
     private double serviceMeasureHeigth;
     private double serviceMeasureBase;
     private double meterValue;
-
-    public Wall(double serviceMeasureSide, double serviceMeasureHeigth, double serviceMeasureBase){
-        this.serviceMeasureSide = serviceMeasureSide;
-        this.serviceMeasureHeigth = serviceMeasureHeigth;
-        this.serviceMeasureBase = serviceMeasureBase;
-    }
 
     public double calcService(Wall wall, double meterValue){
         double side = wall.getServiceMeasureSide();

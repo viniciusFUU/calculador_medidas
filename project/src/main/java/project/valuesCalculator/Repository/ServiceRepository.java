@@ -7,5 +7,5 @@ import project.valuesCalculator.Models.ServiceM;
 
 @Repository
 public interface ServiceRepository extends JpaRepository<ServiceM, Integer>{
-    
+    ServiceM findById(int id);
 }

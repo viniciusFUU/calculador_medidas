@@ -1,20 +1,18 @@
 package project.valuesCalculator.Models;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Component
 public class Floor {
     private double front;
     private double side;
 
-    public Floor(double front, double side){
-        this.front = front;
-        this.side = side;
-    }
-
-    public double calcService(Floor floor, double serviceValue){
-        return (floor.getFront()*floor.getSide())*serviceValue;
+    public double calcService(double serviceValue){
+        return (front*side)*serviceValue;
     }
 }
